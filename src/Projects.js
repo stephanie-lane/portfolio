@@ -34,16 +34,14 @@ class Projects extends React.Component{
         return (
             <>
                 <div id='projects'>
-                    <img className='skewTopBackground1' src={skewTopBackground} alt=''/>
+                    
                     <div className='projectGrid'>
 
-
+                        <img className='skewTopBackground1' src={skewTopBackground} alt=''/>
+                        <div className='swapBackground'></div>
                         <div className='swapMeet'> 
+                            <div className='title'>Swap Meet</div>
                             <div className='projectInfo swapMeetInfo'>
-                                <div className='titleContainer'>
-                                    <div className='title'>Swap Meet</div>
-                                    <img onClick={this.swapGit} id="github" src="https://img.icons8.com/ios/50/000000/github-filled.png" alt=""/>
-                                </div>
                                 <div className='description'>
                                     A website app for bartering services. Users create a profile with a service they can offer to others, which will then show up in the searched services. Users can search for others services, and can use the app to barter their services or can call/email the user directly for services.
                                 </div>
@@ -51,11 +49,6 @@ class Projects extends React.Component{
                                     <div className='boldBuilt'>Built using: </div>
                                     React, Express, MongoDB, Mongoose, HTML, CSS
                                 </div>
-                            </div>
-                            <div className="imgLoginContainer">
-                                <a href="https://swap-meet-for-freelancers.herokuapp.com/" className='swapMeetImg' target='_blank'rel="noopener noreferrer" >
-                                    <img src={SwapMeet} alt=""/>
-                                </a>
                                 <div className='exampleLogins'>
                                     <div className='loginWith'>Login with:</div>
                                     <div className='usernamePassword'>
@@ -64,13 +57,19 @@ class Projects extends React.Component{
                                     </div>
                                 </div>
                             </div>
+                            <div className='imgAndLinks'>
+                                <a href="https://swap-meet-for-freelancers.herokuapp.com/" className='swapMeetImg' target='_blank'rel="noopener noreferrer" >
+                                    <img src={SwapMeet} alt=""/>
+                                </a>
+                                <img onClick={this.swapGit} id="github" src="https://img.icons8.com/ios/50/000000/github-filled.png" alt=""/>
+                                
+                            </div>
                         </div>
-
-
-                        <div className='divider1'></div>
+                        <img className='skewBottomBackground1' src={skewBottomBackground} alt=''/>
 
 
                         <div className='noted'> 
+                            <div className='title'>Noted</div>
                             <div className="imgLoginContainer">
                                 <a href="https://noted-note-taking.herokuapp.com/" className='notedImg' target='_blank'rel="noopener noreferrer" >
                                     <img src={Noted} alt=""/>
@@ -85,7 +84,6 @@ class Projects extends React.Component{
                             </div>
                             <div className='projectInfo notedInfo'>
                             <div className='titleContainer'>
-                                    <div className='title'>Noted</div>
                                     <img onClick={this.notedGit} id="github" src="https://img.icons8.com/ios/50/000000/github-filled.png" alt=""/>
                                 </div>
                                 <div className='description'>
@@ -99,31 +97,34 @@ class Projects extends React.Component{
                         </div>
 
 
-                        <div className='divider2'></div>
 
 
+                        <div className='triviaBackground'></div>
+                        
                         <div className='triviaGame'>
                             <div className='projectInfo triviaGameInfo'>
                             <div className='titleContainer'>
-                                    <div className='title'>Trivia Game</div>
-                                    <img onClick={this.triviaGit} id="github" src="https://img.icons8.com/ios/50/000000/github-filled.png" alt=""/>
-                                    </div>
-                                <div className='description'>
-                                    Created a trivia game using opentdb API. It randomly gives a user a question, shows the correct and incorrect answers once an answer is chosen, and keeps track of the users score. In addition, the user can search through the questions for specific words, category, difficulty level, or type.
-                                </div>
+                                <div className='title'>Trivia Game</div>
+                            </div>
+                            <div className='description'>
+                                Created a trivia game using opentdb API. It randomly gives a user a question, shows the correct and incorrect answers once an answer is chosen, and keeps track of the users score. In addition, the user can search through the questions for specific words, category, difficulty level, or type.
+                            </div>
                                 <div className='builtWith'>
                                     <div className='boldBuilt'>Built using: </div>
                                     React, HTML, CSS
                                 </div>
                             </div>
-                            <a href="https://stephanie_lane_TriviaGame.surge.sh" className='triviaGameImg' target='_blank'rel="noopener noreferrer" >
-                                <img src={TriviaGame} alt=""/>
-                            </a> 
+                            <div className='imgAndLinks'>
+                                <a href="https://stephanie_lane_TriviaGame.surge.sh" className='triviaGameImg' target='_blank'rel="noopener noreferrer" >
+                                    <img src={TriviaGame} alt=""/>
+                                </a> 
+                                <img onClick={this.triviaGit} id="github" src="https://img.icons8.com/ios/50/000000/github-filled.png" alt=""/>
+                            </div>
                         </div>
-                    </div>
+                    </div>                   
 
 
-                    <img className='skewBottomBackground' src={skewBottomBackground} alt=''/>
+                    
                     <div className='projectGrid2'>
 
 
@@ -147,7 +148,6 @@ class Projects extends React.Component{
                         </div>
 
 
-                        <div className='divider3'></div>
 
 
                         <div className='zenGarden'>
@@ -209,7 +209,6 @@ class Projects extends React.Component{
                         </div>
 
 
-                        <div className='divider1'></div>
 
 
                         <div className='noted'> 
@@ -239,7 +238,6 @@ class Projects extends React.Component{
                         </div>
 
 
-                        <div className='divider2'></div>
 
 
                         <div className='triviaGame'>

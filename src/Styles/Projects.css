@@ -4,32 +4,29 @@
     font-size: 18px;
 }
 
-.skewTopBackground2, .skewBottomBackground{
+/* .skewTopBackground2, .skewBottomBackground{
     z-index: 1;
     width: 100%;
     border-radius: 0;
-}
+} */
 
-.skewTopBackground1{
-    z-index: 2;
-    width: 100%;
-    border-radius: 0;
-}
 
-.skewBottomBackground{
+
+/* .skewBottomBackground{
     margin-top: -2%;
 }
 
 .skewTopBackground2{
     width: 100%;
     border-radius: 0;
-}
+} */
+
+
 
 .projectGrid{
     margin-top: -2%;
     position: relative;
     padding-top: 2%;
-    background-color: #909090;
     z-index: 2;
 }
 
@@ -53,11 +50,25 @@ img{
     padding-bottom: 25px;
 }
 
+.title{
+    margin-top: -10%;
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
 .projectInfo{
     font-size: 19px;
+    grid-row: 2/3;
+    grid-column: 1/2;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: -3%;
+}
+
+.imgAndLinks{
+    grid-row: 2/3;
+    grid-column: 2/3;
 }
 
 .boldBuilt, .loginWith{
@@ -90,71 +101,84 @@ img{
         grid-auto-rows: auto;
     }
 
+    .skewTopBackground1{
+        /* z-index: 2; */
+        width: 100%;
+        border-radius: 0;
+        grid-row: 1/2;
+        grid-column: 1/4;
+    }
+
+    .swapBackground{
+        background-color: #909090;
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+
     .exampleLogins{
         display: grid;
         grid-template-columns: 2fr 3fr;
         grid-auto-rows: auto;
-        margin-top: 45px;
+        margin-bottom: 25px;
     }
     
     
     .swapMeet{
         grid-column: 2/3;
-        grid-row: 1/2;
+        grid-row: 2/3;
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-gap: 10%;
-        
     }
 
-    .divider1{
-        margin-top: 11%;
-        grid-row: 2/3;
-        grid-column: 2/3;
+    .skewBottomBackground1{
+        width: 100%;
+        grid-row: 3/4;
+        grid-column: 1/4;
+        border-radius: 0;
     }
     
     .noted{
         grid-column: 2/3;
-        grid-row: 3/4;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 20%;
-        padding-top: 11%;
-    }
-    
-    .divider2{
-        margin-top: 11%;
         grid-row: 4/5;
-        grid-column: 2/3;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 10%;
+    }
+
+    .triviaBackground{
+        grid-row: 6/7;
+        grid-column: 1/4;
+        background-color: #FFC9DE;
     }
 
     .triviaGame{
         grid-column: 2/3;
-        grid-row: 5/6;
+        grid-row: 6/7;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 20%;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 10%;
         padding-top: 11%;
     }
+
     .todos{
         grid-column: 2/3;
-        grid-row: 6/7;
+        grid-row: 8/9;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 20%;
         padding-top: 2%;
     }
 
-    .divider3{
-        margin-top: 11%;
-        grid-row: 7/8;
-        grid-column: 2/3;
-    }
 
     .swapMeet > a, .noted > a, .triviaGame > a, .todos > a{
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+
+    .zenGardenBackground{
+        background-color: #8AFFB3;
     }
 
     .zenGarden{

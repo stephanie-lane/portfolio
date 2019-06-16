@@ -14,25 +14,6 @@ import './Styles/Projects.css';
 
 
 class Projects extends React.Component{
-    swapGit = () => {
-        window.open("https://github.com/stephlane544/swapMeet");
-    }
-
-    notedGit = () => {
-        window.open("https://github.com/stephlane544/Noted");
-    }
-    
-    triviaGit = () => {
-        window.open("https://github.com/stephlane544/trivia-game");
-    }
-
-    todoGit = () => {
-        window.open("https://github.com/stephlane544/to-dos");
-    }
-
-    zenGardenGit = () => {
-        window.open("https://github.com/stephlane544/css-zen-garden");
-    }
 
     render () {
         return (

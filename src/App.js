@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import { Switch, Route } from "react-router-dom";
 import './App.css';
 import Navbar from './Navbar';
 import About from './About';
 import Contact from './Contact';
 import Projects from './Projects';
+import Resume from './Resume';
 import SideDrawer from './SideDrawer';
 import Backdrop from './Backdrop';
 
@@ -37,8 +39,11 @@ class App extends Component {
         :
           null
         }
-        <About />
-        <Projects />
+        <Switch>
+          <Route exact path='/' component={About}/>
+          <Route path='/projects' component={Projects}/>
+          <Route path='/resume' component={Resume}/>
+        </Switch>
         <Contact />
       </>
     );

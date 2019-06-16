@@ -7,9 +7,9 @@ const Navbar = (props) => {
         <>
             <div className='navbar'>
                 <div id='name'>Stephanie Lane</div>
-                <a href='#projects' className='links navProjects'  to='/projects'>Projects</a>
-                <a href='#resume' className='links navResume'  to='/resume'>Resume</a>
-                <a href='#contact' className='links navContact' to='/contact'>Contact</a>
+                <a href='/projects' className='links navProjects'  to='/projects'>Projects</a>
+                <a href='/resume' className='links navResume'  to='/resume'>Resume</a>
+                <a href='/contact' className='links navContact' to='/contact'>Contact</a>
             </div>
 
             <div className='navbar2'>

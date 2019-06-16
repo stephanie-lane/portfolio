@@ -1,5 +1,5 @@
 #about{
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
     z-index: 1;
 }
 
@@ -10,6 +10,10 @@
 
 .aboutDescription{
     line-height: 2;
+}
+
+.aboutDescription > span{
+    font-style: italic;
 }
 
 .pinkText{

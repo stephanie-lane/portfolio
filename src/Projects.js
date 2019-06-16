@@ -1,9 +1,9 @@
 import React  from 'react';
-import Todos from './project thumbnails/To-dos.png';
-import ZenGarden from './project thumbnails/CSS Zen Garden.png';
-import TriviaGame from './project thumbnails/Trivia Game.png';
-import SwapMeet from './project thumbnails/SwapMeet.png';
-import Noted from './project thumbnails/Noted.png';
+import Todos from './imgs/project thumbnails/To-dos.png';
+import ZenGarden from './imgs/project thumbnails/CSS Zen Garden.png';
+import TriviaGame from './imgs/project thumbnails/Trivia Game.png';
+import SwapMeet from './imgs/project thumbnails/SwapMeet.png';
+import Noted from './imgs/project thumbnails/Noted.png';
 import greyTop from './imgs/greyTop.png';
 import greyBottom from './imgs/greyBottom.png';
 import pinkTop from './imgs/pinkTop.png';

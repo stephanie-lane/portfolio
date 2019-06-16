@@ -4,8 +4,12 @@ import ZenGarden from './project thumbnails/CSS Zen Garden.png';
 import TriviaGame from './project thumbnails/Trivia Game.png';
 import SwapMeet from './project thumbnails/SwapMeet.png';
 import Noted from './project thumbnails/Noted.png';
-import skewTopBackground from './skewTopBackground.png';
-import skewBottomBackground from './skewBottomBackground.png';
+import greyTop from './imgs/greyTop.png';
+import greyBottom from './imgs/greyBottom.png';
+import pinkTop from './imgs/pinkTop.png';
+import pinkBottom from './imgs/pinkBottom.png';
+import greenTop from './imgs/greenTop.png';
+import greenBottom from './imgs/greenBottom.png';
 import './Styles/Projects.css';
 
 
@@ -37,13 +41,13 @@ class Projects extends React.Component{
                     
                     <div className='projectGrid'>
 
-                        <img className='skewTopBackground1' src={skewTopBackground} alt=''/>
+                        <img className='skewBackground greyTop' src={greyTop} alt=''/>
                         <div className='swapBackground'></div>
+                        <div className='title swapTitle'>Swap Meet</div>
                         <div className='swapMeet'> 
-                            <div className='title'>Swap Meet</div>
                             <div className='projectInfo swapMeetInfo'>
                                 <div className='description'>
-                                    A website app for bartering services. Users create a profile with a service they can offer to others, which will then show up in the searched services. Users can search for others services, and can use the app to barter their services or can call/email the user directly for services.
+                                    A website app for bartering services. Users create a profile with a service they can offer to others, which will then show up in the searched services. Users can search through all of the services offered.
                                 </div>
                                 <div className='builtWith'>
                                     <div className='boldBuilt'>Built using: </div>
@@ -61,19 +65,35 @@ class Projects extends React.Component{
                                 <a href="https://swap-meet-for-freelancers.herokuapp.com/" className='swapMeetImg' target='_blank'rel="noopener noreferrer" >
                                     <img src={SwapMeet} alt=""/>
                                 </a>
-                                <img onClick={this.swapGit} id="github" src="https://img.icons8.com/ios/50/000000/github-filled.png" alt=""/>
-                                
+                                <div className='links'>
+                                    <a href="https://swap-meet-for-freelancers.herokuapp.com/"  target='_blank'rel="noopener noreferrer" > View live site</a>
+                                    <a href="https://github.com/stephlane544/swapMeet" target='_blank'rel="noopener noreferrer" > View github</a>
+                                </div>
                             </div>
                         </div>
-                        <img className='skewBottomBackground1' src={skewBottomBackground} alt=''/>
+                        <img className='skewBackground greyBottom' src={greyBottom} alt=''/>
 
 
+
+                        <div className='title notedTitle'>Noted</div>
                         <div className='noted'> 
-                            <div className='title'>Noted</div>
-                            <div className="imgLoginContainer">
+                            <div className='imgAndLinks'>
                                 <a href="https://noted-note-taking.herokuapp.com/" className='notedImg' target='_blank'rel="noopener noreferrer" >
                                     <img src={Noted} alt=""/>
                                 </a>
+                                <div className='links'>
+                                    <a href="https://noted-note-taking.herokuapp.com/"  target='_blank'rel="noopener noreferrer" > View live site</a>
+                                    <a href="https://github.com/stephlane544/Noted" target='_blank'rel="noopener noreferrer" > View github</a>
+                                </div>
+                            </div>
+                            <div className='projectInfo notedInfo'>
+                                <div className='description'>
+                                    Noted is an app for small notes, but it also has a collections section in which users can make a book with whatever content they would like.
+                                </div>
+                                <div className='builtWith'>
+                                    <div className='boldBuilt'>Built using: </div>
+                                    React, Express, MongoDB, Mongoose, HTML, CSS
+                                </div>
                                 <div className='exampleLogins'>
                                     <div className='loginWith'>Login with:</div>
                                     <div className='usernamePassword'>
@@ -82,30 +102,14 @@ class Projects extends React.Component{
                                     </div>
                                 </div>
                             </div>
-                            <div className='projectInfo notedInfo'>
-                            <div className='titleContainer'>
-                                    <img onClick={this.notedGit} id="github" src="https://img.icons8.com/ios/50/000000/github-filled.png" alt=""/>
-                                </div>
-                                <div className='description'>
-                                    Noted is an app for small notes, but it also has a collections section in which users can make a book with whatever content they would like.
-                                </div>
-                                <div className='builtWith'>
-                                    <div className='boldBuilt'>Built using: </div>
-                                    React, Express, MongoDB, Mongoose, HTML, CSS
-                                </div>
-                            </div>
                         </div>
 
 
-
-
+                        <img className='skewBackground pinkTop' src={pinkTop} alt=''/>
                         <div className='triviaBackground'></div>
-                        
+                        <div className='title triviaTitle'>Trivia Game</div>
                         <div className='triviaGame'>
                             <div className='projectInfo triviaGameInfo'>
-                            <div className='titleContainer'>
-                                <div className='title'>Trivia Game</div>
-                            </div>
                             <div className='description'>
                                 Created a trivia game using opentdb API. It randomly gives a user a question, shows the correct and incorrect answers once an answer is chosen, and keeps track of the users score. In addition, the user can search through the questions for specific words, category, difficulty level, or type.
                             </div>
@@ -118,25 +122,26 @@ class Projects extends React.Component{
                                 <a href="https://stephanie_lane_TriviaGame.surge.sh" className='triviaGameImg' target='_blank'rel="noopener noreferrer" >
                                     <img src={TriviaGame} alt=""/>
                                 </a> 
-                                <img onClick={this.triviaGit} id="github" src="https://img.icons8.com/ios/50/000000/github-filled.png" alt=""/>
-                            </div>
+                                <div className='links'>
+                                    <a href="https://stephanie_lane_TriviaGame.surge.sh"  target='_blank'rel="noopener noreferrer" > View live site</a>
+                                    <a href="https://github.com/stephlane544/trivia-game" target='_blank'rel="noopener noreferrer" > View github</a>
+                                </div>                            </div>
                         </div>
-                    </div>                   
+                        <img className='skewBackground pinkBottom' src={pinkBottom} alt=''/>                  
 
 
-                    
-                    <div className='projectGrid2'>
 
-
+                        <div className='title todoTitle'>To-dos</div>
                         <div className='todos'>
-                            <a href="https://stephanie_lane_AxiosTo-dos.surge.sh" className='todosImg' target='_blank'rel="noopener noreferrer" >
-                                <img src={Todos} alt=""/>
-                            </a>
+                            <div className='imgAndLinks'>
+                                <a href="https://stephanie_lane_AxiosTo-dos.surge.sh" className='todosImg' target='_blank'rel="noopener noreferrer" >
+                                    <img src={Todos} alt=""/>
+                                </a>
+                                <div className='links'>
+                                    <a href="https://stephanie_lane_AxiosTo-dos.surge.sh"  target='_blank'rel="noopener noreferrer" > View live site</a>
+                                    <a href="https://github.com/stephlane544/to-dos" target='_blank'rel="noopener noreferrer" > View github</a>
+                                </div>                            </div>
                             <div className='projectInfo todosInfo'>
-                            <div className='titleContainer'>
-                                    <div className='title'>To-dos</div>
-                                    <img onClick={this.todoGit} id="github" src="https://img.icons8.com/ios/50/000000/github-filled.png" alt=""/>
-                                </div>
                                 <div className='description'>
                                     Developed a website linked to an API to get a person's to-do list. Also allowed user to post new to-do items, delete items, or mark them as complete using Axios to put these into the API
                                 </div>
@@ -149,13 +154,11 @@ class Projects extends React.Component{
 
 
 
-
+                        <img className='skewBackground greenTop' src={greenTop} alt=''/>
+                        <div className='zenGardenBackground'></div>
+                        <div className='title zenTitle'>CSS Zen Garden</div>
                         <div className='zenGarden'>
                             <div className='projectInfo zenGardenInfo'>
-                            <div className='titleContainer'>
-                                    <div className='title'>CSS Zen Garden</div>
-                                    <img onClick={this.zenGardenGit} id="github" src="https://img.icons8.com/ios/50/000000/github-filled.png" alt=""/>
-                                </div>
                                 <div className='description'>
                                     Created a website mimicking the appearance of csszengarden.com
                                 </div>
@@ -167,30 +170,41 @@ class Projects extends React.Component{
                                     HTML and CSS (grid in particular)
                                 </div>
                             </div>
-                            <a href="https://stephanie_lane_cssZenGarden.surge.sh" className='zenGardenImg' target='_blank'rel="noopener noreferrer" >
-                                <img src={ZenGarden} alt=""/>
-                            </a> 
+                            <div className='imgAndLinks'>
+                                <a href="https://stephanie_lane_cssZenGarden.surge.sh" className='zenGardenImg' target='_blank'rel="noopener noreferrer" >
+                                    <img src={ZenGarden} alt=""/>
+                                </a> 
+                                <div className='links'>
+                                    <a href="https://stephanie_lane_cssZenGarden.surge.sh"  target='_blank'rel="noopener noreferrer" > View live site</a>
+                                    <a href="https://github.com/stephlane544/css-zen-garden" target='_blank'rel="noopener noreferrer" > View github</a>
+                                </div>                            </div>
                         </div>
-
+                        <img className='skewBackground greenBottom' src={greenBottom} alt=''/>
                     </div>
-                    <img className='skewTopBackground2' src={skewTopBackground} alt=''/>
+                    
                 </div>
 
 
+
+
+
+
+
+
+
+
+
                 <div id='projects2'>
-                    <img className='skewTopBackground1' src={skewTopBackground} alt=''/>
                     <div className='projectGrid'>
 
+                    <img className='skewBackground greyTop' src={greyTop} alt=''/>
+                        <div className='swapBackground'></div>
+                        <div className='title swapTitle'>Swap Meet</div>
                         <div className='swapMeet'> 
                             <div className='projectInfo swapMeetInfo'>
-                            <div className='titleContainer'>
-                                    <div className='title'>Swap Meet</div>
-                                    <img onClick={this.swapGit} id="github" src="https://img.icons8.com/ios/50/000000/github-filled.png" alt=""/>
-                                </div>
                                 <div className='description'>
-                                    A website app for bartering services. Users create a profile with a service they can offer to others, which will then show up in the searched services. Users can search for others services, and can use the app to barter their services or can call/email the user directly for services.
+                                    A website app for bartering services. Users create a profile with a service they can offer to others, which will then show up in the searched services. Users can search through all of the services offered.
                                 </div>
-                                <div className='collaborators'>In collaboration with Madison Porter</div>
                                 <div className='builtWith'>
                                     <div className='boldBuilt'>Built using: </div>
                                     React, Express, MongoDB, Mongoose, HTML, CSS
@@ -203,20 +217,27 @@ class Projects extends React.Component{
                                     </div>
                                 </div>
                             </div>
-                            <a href="https://swap-meet-for-freelancers.herokuapp.com/" className='swapMeetImg' target='_blank'rel="noopener noreferrer" >
-                                <img src={SwapMeet} alt=""/>
-                            </a>
+                            <div className='imgAndLinks'>
+                                <a href="https://swap-meet-for-freelancers.herokuapp.com/" className='swapMeetImg' target='_blank'rel="noopener noreferrer" >
+                                    <img src={SwapMeet} alt=""/>
+                                </a>
+                                <div className='links'>
+                                    <a href="https://swap-meet-for-freelancers.herokuapp.com/"  target='_blank'rel="noopener noreferrer" > View live site</a>
+                                    <a href="https://github.com/stephlane544/swapMeet" target='_blank'rel="noopener noreferrer" > View github</a>
+                                </div>                                
+                            </div>
                         </div>
+                        <img className='skewBackground greyBottom' src={greyBottom} alt=''/>
 
 
 
 
+
+
+                        
+                        <div className='title notedTitle'>Noted</div>
                         <div className='noted'> 
                             <div className='projectInfo notedInfo'>
-                            <div className='titleContainer'>
-                                    <div className='title'>Noted</div>
-                                <img onClick={this.notedGit} id="github" src="https://img.icons8.com/ios/50/000000/github-filled.png" alt=""/>
-                                </div>
                                 <div className='description'>
                                     Noted is an app for small notes, but it also has a collections section in which users can make a book with whatever content they would like.
                                 </div>
@@ -232,45 +253,46 @@ class Projects extends React.Component{
                                     </div>
                                 </div>
                             </div>
-                            <a href="https://noted-note-taking.herokuapp.com/" className='notedImg' target='_blank'rel="noopener noreferrer" >
-                                <img src={Noted} alt=""/>
-                            </a>
+                            <div className='imgAndLinks'>
+                                <a href="https://noted-note-taking.herokuapp.com/" className='notedImg' target='_blank'rel="noopener noreferrer" >
+                                    <img src={Noted} alt=""/>
+                                </a>
+                                <div className='links'>
+                                    <a href="https://noted-note-taking.herokuapp.com/"  target='_blank'rel="noopener noreferrer" > View live site</a>
+                                    <a href="https://github.com/stephlane544/Noted" target='_blank'rel="noopener noreferrer" > View github</a>
+                                </div>                            </div>
                         </div>
 
 
-
-
+                        <img className='skewBackground pinkTop' src={pinkTop} alt=''/>
+                        <div className='triviaBackground'></div>
+                        <div className='title triviaTitle'>Trivia Game</div>
                         <div className='triviaGame'>
                             <div className='projectInfo triviaGameInfo'>
-                            <div className='titleContainer'>
-                                    <div className='title'>Tivia Game</div>
-                                    <img onClick={this.triviaGit} id="github" src="https://img.icons8.com/ios/50/000000/github-filled.png" alt=""/>
-                                </div>
-                                <div className='description'>
-                                    Created a trivia game using opentdb API. It randomly gives a user a question, shows the correct and incorrect answers once an answer is chosen, and keeps track of the users score. In addition, the user can search through the questions for specific words, category, difficulty level, or type.
-                                </div>
+                            <div className='description'>
+                                Created a trivia game using opentdb API. It randomly gives a user a question, shows the correct and incorrect answers once an answer is chosen, and keeps track of the users score. In addition, the user can search through the questions for specific words, category, difficulty level, or type.
+                            </div>
                                 <div className='builtWith'>
                                     <div className='boldBuilt'>Built using: </div>
                                     React, HTML, CSS
                                 </div>
                             </div>
-                            <a href="https://stephanie_lane_TriviaGame.surge.sh" className='triviaGameImg' target='_blank'rel="noopener noreferrer" >
-                                <img src={TriviaGame} alt=""/>
-                            </a> 
+                            <div className='imgAndLinks'>
+                                <a href="https://stephanie_lane_TriviaGame.surge.sh" className='triviaGameImg' target='_blank'rel="noopener noreferrer" >
+                                    <img src={TriviaGame} alt=""/>
+                                </a> 
+                                <div className='links'>
+                                    <a href="https://stephanie_lane_TriviaGame.surge.sh"  target='_blank'rel="noopener noreferrer" > View live site</a>
+                                    <a href="https://github.com/stephlane544/trivia-game" target='_blank'rel="noopener noreferrer" > View github</a>
+                                </div>                            </div>
                         </div>
+                        <img className='skewBackground pinkBottom' src={pinkBottom} alt=''/>                  
 
 
-                    </div>
-                    <img className='skewBottomBackground' src={skewBottomBackground} alt=''/>
-                    <div className='projectGrid2'>
 
-
+                        <div className='title todoTitle'>To-dos</div>
                         <div className='todos'>
                             <div className='projectInfo todosInfo'>
-                            <div className='titleContainer'>
-                                    <div className='title'>To-dos</div>
-                                    <img onClick={this.todoGit} id="github" src="https://img.icons8.com/ios/50/000000/github-filled.png" alt=""/>
-                                </div>
                                 <div className='description'>
                                     Developed a website linked to an API to get a person's to-do list. Also allowed user to post new to-do items, delete items, or mark them as complete using Axios to put these into the API
                                 </div>
@@ -279,21 +301,23 @@ class Projects extends React.Component{
                                     HTML, CSS, and Javascript
                                 </div>
                             </div>
-                            <a href="https://stephanie_lane_AxiosTo-dos.surge.sh" className='todosImg' target='_blank'rel="noopener noreferrer" >
-                                <img src={Todos} alt=""/>
-                            </a>
+                            <div className='imgAndLinks'>
+                                <a href="https://stephanie_lane_AxiosTo-dos.surge.sh" className='todosImg' target='_blank'rel="noopener noreferrer" >
+                                    <img src={Todos} alt=""/>
+                                </a>
+                                <div className='links'>
+                                    <a href="https://stephanie_lane_AxiosTo-dos.surge.sh"  target='_blank'rel="noopener noreferrer" > View live site</a>
+                                    <a href="https://github.com/stephlane544/to-dos" target='_blank'rel="noopener noreferrer" > View github</a>
+                                </div>                            </div>
                         </div>
 
 
-                        <div className='divider3'></div>
 
-
+                        <img className='skewBackground greenTop' src={greenTop} alt=''/>
+                        <div className='zenGardenBackground'></div>
+                        <div className='title zenTitle'>CSS Zen Garden</div>
                         <div className='zenGarden'>
                             <div className='projectInfo zenGardenInfo'>
-                            <div className='titleContainer'>
-                                    <div className='title'>CSS Zen Garden</div>
-                                    <img onClick={this.zenGardenGit} id="github" src="https://img.icons8.com/ios/50/000000/github-filled.png" alt=""/>
-                                </div>
                                 <div className='description'>
                                     Created a website mimicking the appearance of csszengarden.com
                                 </div>
@@ -305,15 +329,21 @@ class Projects extends React.Component{
                                     HTML and CSS (grid in particular)
                                 </div>
                             </div>
-                            <a href="https://stephanie_lane_cssZenGarden.surge.sh" className='zenGardenImg' target='_blank'rel="noopener noreferrer" >
-                                <img src={ZenGarden} alt=""/>
-                            </a> 
+                            <div className='imgAndLinks'>
+                                <a href="https://stephanie_lane_cssZenGarden.surge.sh" className='zenGardenImg' target='_blank'rel="noopener noreferrer" >
+                                    <img src={ZenGarden} alt=""/>
+                                </a> 
+                                <div className='links'>
+                                    <a href="https://stephanie_lane_cssZenGarden.surge.sh"  target='_blank'rel="noopener noreferrer" > View live site</a>
+                                    <a href="https://github.com/stephlane544/css-zen-garden" target='_blank'rel="noopener noreferrer" > View github</a>
+                                </div>                            </div>
                         </div>
+                        <img className='skewBackground greenBottom' src={greenBottom} alt=''/>
+                    </div>
+                    
+                </div>
 
                         
-                    </div>
-                    <img className='skewTopBackground2' src={skewTopBackground} alt=''/>
-                </div>
             </>
         );
     };

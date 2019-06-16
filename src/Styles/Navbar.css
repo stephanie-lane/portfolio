@@ -5,13 +5,13 @@
     background-color: #5ACCC2;
     height: 120px;
     width: 100%;
+    position: fixed;
+    z-index: 4;
 }
 
 .links{
     text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
     color: white;
     font-family: 'Aclonica';
     font-size: 150%;
@@ -111,8 +111,7 @@
         display: grid;
         grid-template-columns: 10fr 1fr 1fr;
         grid-template-rows: 100px;
-        background-color: #10b5a6;
-        background-image: linear-gradient(#10b5a6, white);
+        background-color: #5ACCC2;
         height: 120px;
         width: 100%;
         grid-gap: 5%;
@@ -146,8 +145,7 @@
         display: grid;
         grid-template-columns: 10fr 1fr 1fr;
         grid-template-rows: 100px;
-        background-color: #10b5a6;
-        background-image: linear-gradient(#10b5a6, white);
+        background-color: #5ACCC2;
         height: 120px;
         width: 100%;
         grid-gap: 5%;

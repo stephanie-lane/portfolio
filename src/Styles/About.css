@@ -12,9 +12,21 @@
     line-height: 2;
 }
 
+.pinkText{
+    color: #CC72C9;
+}
+
+.greenText{
+    color: #1E994E;
+}
+
+.orangeText{
+    color: #FFC350;
+}
+
 @media (min-width: 1000px){
     .aboutGrid{
-        margin-top: 2%;
+        padding-top: 11%;
         display: grid;
         grid-template-columns: 1fr 2fr 4fr 1fr;
         align-items: center;
@@ -34,7 +46,7 @@
 
 @media (max-width: 1000px) and (min-width: 850px){
     .aboutGrid{
-        margin-top: 5%;
+        padding-top: 10%;
         display: grid;
         grid-template-columns: 1fr 4fr 2fr 1fr;
         align-items: center
@@ -52,7 +64,7 @@
 
 @media (max-width: 850px) and (min-width: 700px){
     .aboutGrid{
-        margin-top: 5%;
+        padding-top: 10%;
         display: grid;
         grid-template-columns: 1fr 7fr 3fr 1fr;
         align-items: center
@@ -68,9 +80,27 @@
     }
 }
 
-@media (max-width: 700px) and (min-width: 550px){
+@media (max-width: 700px) and (min-width: 650px){
     .aboutGrid{
-        margin-top: 5%;
+        padding-top: 20%;
+        display: grid;
+        grid-template-columns: 1fr 8fr 4fr 1fr;
+        align-items: center
+    }
+
+    .headshot{
+        width: 70%;
+    }
+
+    .aboutDescription{
+        font-size: 15px;
+        padding-top: 20%;
+    }
+}
+
+@media (max-width: 650px) and (min-width: 550px){
+    .aboutGrid{
+        padding-top: 5%;
         display: grid;
         grid-template-columns: 1fr 8fr 4fr 1fr;
         align-items: center
@@ -88,7 +118,7 @@
 
 @media (max-width: 550px){
     .aboutGrid{
-        margin-top: 5%;
+        padding-top: 5%;
         display: grid;
         grid-template-columns: 1fr 10fr 6fr 1fr;
         align-items: center

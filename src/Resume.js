@@ -1,9 +1,11 @@
 import React from 'react';
+import './Styles/Resume.css';
+
 
 const Resume = () => {
     return (
-        <div id='resume'>
-            <embed src="https://drive.google.com/file/d/1C46QDO3VlPhm9xuHa-32ytAY1XcEeLf_/view?usp=sharing"/>
+        <div className="resumeContainer">
+            <iframe src="https://www.keepandshare.com/doc16/23421/lane-stephanie-resume-pdf-99k?da=y&ifr=y" scrolling="yes" ></iframe>
         </div>
     );
 };

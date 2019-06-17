@@ -1,1 +1,2 @@
 Lane_Stephanie_Resume[[:space:]].pdf filter=lfs diff=lfs merge=lfs -text
+Lane_Stephanie_Resume.pdf filter=lfs diff=lfs merge=lfs -text

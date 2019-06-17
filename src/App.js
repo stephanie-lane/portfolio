@@ -8,6 +8,7 @@ import Projects from './Projects';
 import Resume from './Resume';
 import SideDrawer from './SideDrawer';
 import Backdrop from './Backdrop';
+import Footer from './Footer';
 
 
 class App extends Component {
@@ -30,7 +31,7 @@ class App extends Component {
   };
 
   render() {
-    return (
+    const HomeContainer = () => (
       <>
         <Navbar drawerClickHandler={this.drawerToggleClickHandler} />
         <SideDrawer show={this.state.sideDrawerOpen} drawerClickHandler={this.drawerToggleClickHandler}/>
@@ -39,12 +40,53 @@ class App extends Component {
         :
           null
         }
-        <Switch>
-          <Route exact path='/' component={About}/>
-          <Route path='/projects' component={Projects}/>
+        <Route exact path='/' component={About}/>
+        <Footer />
+      </>
+    )
+    const ProjectsContainer = () => (
+      <>
+        <Navbar drawerClickHandler={this.drawerToggleClickHandler} />
+        <SideDrawer show={this.state.sideDrawerOpen} drawerClickHandler={this.drawerToggleClickHandler}/>
+        {this.state.sideDrawerOpen ?
+          <Backdrop click={this.backdropClickHandler} />
+        :
+          null
+        }
+        <Route path='/projects' component={Projects}/>
+        <Footer />
+      </>
+    )
+
+    const ContactContainer = () => (
+      <>
+        <Navbar drawerClickHandler={this.drawerToggleClickHandler} />
+        <SideDrawer show={this.state.sideDrawerOpen} drawerClickHandler={this.drawerToggleClickHandler}/>
+        {this.state.sideDrawerOpen ?
+          <Backdrop click={this.backdropClickHandler} />
+        :
+          null
+        }
+        <Route path='/contact' component={Contact}/>
+        <Footer />
+      </>
+    )
+
+
+    const ResumeContainer = () => (
+        <>
           <Route path='/resume' component={Resume}/>
+        </>
+    )
+
+    return (
+      <>
+        <Switch>
+          <Route exact path='/' component={HomeContainer}/>
+          <Route path='/projects' component={ProjectsContainer}/>
+          <Route path='/contact' component={ContactContainer}/>
+          <Route path='/resume' component={ResumeContainer}/>
         </Switch>
-        <Contact />
       </>
     );
   }

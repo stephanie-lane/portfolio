@@ -17,7 +17,7 @@ class Contact extends React.Component{
 
     render () {
         return (
-            <div id='contact'>
+            <div id='footer'>
                 <div>520-286-0841</div>
                 <div>stephlane544@gmail.com</div>
                 <img onClick={this.twitter} id="twitter" src="https://img.icons8.com/ios/50/000000/twitter-filled.png" alt=""/>

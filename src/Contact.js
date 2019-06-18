@@ -1,32 +1,31 @@
 import React, { Component } from 'react';
-var email 	= require('emailjs');
 
 
 
 class Contact extends Component {
-    constructor() {
-        super();
-        this.state = {
-            name: '',
-            email: '',
-            message:'',
-            mailSent: false,
-            error: null
-        };
-    }
+    // constructor() {
+    //     super();
+    //     this.state = {
+    //         name: '',
+    //         email: '',
+    //         message:'',
+    //         mailSent: false,
+    //         error: null
+    //     };
+    // }
 
-    handleChange = e => {
-        this.setState({[e.target.name]: e.target.value});
-    }
+    // handleChange = e => {
+    //     this.setState({[e.target.name]: e.target.value});
+    // }
 
-    handleSubmit = e => {
-        e.preventDefault();
+    // handleSubmit = e => {
+    //     e.preventDefault();
       
-    }
+    // }
 
     render() {
         return (
-            <form className='contactPage form' action="contact-form-handler.php"  method="post">
+            <form className='contactPage form' action="https://formspree.io/stephlane544@gmail.com"  method="POST">
                 <input type="text"
                     placeholder='First Name'
                     name='name'
@@ -47,8 +46,9 @@ class Contact extends Component {
                     // value={this.state.message}
                     // onChange={this.handleChange}
                     required
-                />           
-                <button className='submitButton'>Send Message</button>
+                />     
+                  <input type="submit" value="Send" placeholder='SendMessage'/>
+
             </form>
         );
     }

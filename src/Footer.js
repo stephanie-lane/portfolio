@@ -7,6 +7,7 @@ class Contact extends React.Component{
         return (
             <div id='footer'>
                 <div className='footerBackground'></div>
+                <div className='topspacing'></div>
                 <div className='footerTitle'>Contact Me</div>
                 <div className='phoneNumber'>520-286-0841</div>
                 <div className='email'>stephlane544@gmail.com</div>
@@ -26,6 +27,7 @@ class Contact extends React.Component{
                         <img id="linkedIn" src="https://img.icons8.com/ios/50/000000/linkedin-filled.png" alt=""/>
                     </a>
                 </div>
+                <div className='bottomspacing'></div>
             </div>
         );
     }

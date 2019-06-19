@@ -85,12 +85,12 @@
     }
 
     .navbar{
-        /* grid-template-columns: 4fr 1fr 1fr ; */
+        grid-template-columns: 100fr 2fr 2fr 2fr 2fr;
         grid-gap: 5%;
     }
 
     #name{
-        font-size: 190%;
+        font-size: 210%;
     }
 
     .navContact{
@@ -98,7 +98,7 @@
     }
 
     .links{
-        font-size: 100%;
+        font-size: 110%;
     }
 }
 
@@ -112,6 +112,7 @@
         grid-template-columns: 10fr 1fr 1fr;
         grid-template-rows: 100px;
         background-color: #5ACCC2;
+        position: fixed;
         height: 120px;
         width: 100%;
         grid-gap: 5%;

@@ -1,53 +1,38 @@
 import React, { Component } from 'react';
+import './Styles/Contact.css'
 
 
 
 class Contact extends Component {
-    // constructor() {
-    //     super();
-    //     this.state = {
-    //         name: '',
-    //         email: '',
-    //         message:'',
-    //         mailSent: false,
-    //         error: null
-    //     };
-    // }
-
-    // handleChange = e => {
-    //     this.setState({[e.target.name]: e.target.value});
-    // }
-
-    // handleSubmit = e => {
-    //     e.preventDefault();
-      
-    // }
-
     render() {
         return (
             <form className='contactPage form' action="https://formspree.io/stephlane544@gmail.com"  method="POST">
-                <input type="text"
+                <input 
+                    className='nameInput'
+                    type="text"
                     placeholder='First Name'
                     name='name'
-                    // value={this.state.name}
-                    // onChange={this.handleChange}
                     required
                 />
-                <input type="email"
+                <input 
+                    className='emailInput'
+                    type="email"
                     placeholder='Email'
                     name='email'
-                    // value={this.state.email}
-                    // onChange={this.handleChange}
                     required
                 />  
-                <textarea type="text"
+                <textarea 
+                    className='messageInput'
+                    type="text"
                     placeholder='Message'
                     name='message'
-                    // value={this.state.message}
-                    // onChange={this.handleChange}
                     required
                 />     
-                  <input type="submit" value="Send" placeholder='SendMessage'/>
+                <input 
+                    className='submitButton'
+                    type="submit" 
+                    value="Send" 
+                    placeholder='SendMessage'/>
 
             </form>
         );

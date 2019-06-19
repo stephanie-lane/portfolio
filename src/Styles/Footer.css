@@ -71,7 +71,7 @@
     padding-top: 5%;
 }
 
-.footerLinks{
+.footerLinks, .footerLinks:visited, .footerLinks:hover, .footerLinks:focus, .footerLinks:active{
     text-decoration: none;
     align-items: center;
     color: black;

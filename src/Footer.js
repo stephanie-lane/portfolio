@@ -1,8 +1,8 @@
 import React from 'react';
 import './Styles/Footer.css'
-import twitter from './imgs/twitter2.png';
-import github from './imgs/github2.png';
-import linkedin from './imgs/linkedin2.png';
+import twitter from './imgs/twitter.png';
+import github from './imgs/github.png';
+import linkedin from './imgs/linkedin.png';
 
 
 class Contact extends React.Component{

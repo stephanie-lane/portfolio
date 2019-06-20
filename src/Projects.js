@@ -1,15 +1,15 @@
 import React  from 'react';
-import Todos from './imgs/project thumbnails/To-dos.png';
-import ZenGarden from './imgs/project thumbnails/CSS Zen Garden.png';
-import TriviaGame from './imgs/project thumbnails/Trivia Game.png';
-import SwapMeet from './imgs/project thumbnails/SwapMeet.png';
-import Noted from './imgs/project thumbnails/Noted.png';
-import greyTop from './imgs/greyTop.png';
-import greyBottom from './imgs/greyBottom.png';
-import pinkTop from './imgs/pinkTop.png';
-import pinkBottom from './imgs/pinkBottom.png';
-import greenTop from './imgs/greenTop.png';
-import greenBottom from './imgs/greenBottom.png';
+import Todos from './imgs/projectThumbnails/To-dos.png';
+import ZenGarden from './imgs/projectThumbnails/CSS Zen Garden.png';
+import TriviaGame from './imgs/projectThumbnails/Trivia Game.png';
+import SwapMeet from './imgs/projectThumbnails/SwapMeet.png';
+import Noted from './imgs/projectThumbnails/Noted.png';
+import greyTop from './imgs/skewBackgrounds/greyTop.png';
+import greyBottom from './imgs/skewBackgrounds/greyBottom.png';
+import pinkTop from './imgs/skewBackgrounds/pinkTop.png';
+import pinkBottom from './imgs/skewBackgrounds/pinkBottom.png';
+import greenTop from './imgs/skewBackgrounds/greenTop.png';
+import greenBottom from './imgs/skewBackgrounds/greenBottom.png';
 import './Styles/Projects.css';
 
 

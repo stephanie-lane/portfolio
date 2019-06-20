@@ -16,7 +16,7 @@ img{
 }
 
 .skewBackground{
-    border-radius: none !important;
+    border-radius: 0;
 } 
 
 .notedBackground{

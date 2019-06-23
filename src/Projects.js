@@ -8,8 +8,6 @@ import greyTop from './imgs/skewBackgrounds/greyTop.png';
 import greyBottom from './imgs/skewBackgrounds/greyBottom.png';
 import pinkTop from './imgs/skewBackgrounds/pinkTop.png';
 import pinkBottom from './imgs/skewBackgrounds/pinkBottom.png';
-import greenTop from './imgs/skewBackgrounds/greenTop.png';
-import greenBottom from './imgs/skewBackgrounds/greenBottom.png';
 import './Styles/Projects.css';
 
 
@@ -42,7 +40,7 @@ class Projects extends React.Component{
                             </div>
                             <div className='imgAndLinks'>
                                 <a href="https://swap-meet-for-freelancers.herokuapp.com/" className='swapMeetImg' target='_blank'rel="noopener noreferrer" >
-                                    <img src={SwapMeet} alt=""/>
+                                    <img className='swapImg' src={SwapMeet} alt=""/>
                                 </a>
                                 <div className='links'>
                                     <a href="https://swap-meet-for-freelancers.herokuapp.com/"  target='_blank'rel="noopener noreferrer" > View live site</a>
@@ -60,7 +58,7 @@ class Projects extends React.Component{
                         <div className='noted'> 
                             <div className='imgAndLinks'>
                                 <a href="https://noted-note-taking.herokuapp.com/" className='notedImg' target='_blank'rel="noopener noreferrer" >
-                                    <img src={Noted} alt=""/>
+                                    <img className='notedImg' src={Noted} alt=""/>
                                 </a>
                                 <div className='links'>
                                     <a href="https://noted-note-taking.herokuapp.com/"  target='_blank'rel="noopener noreferrer" > View live site</a>
@@ -104,7 +102,7 @@ class Projects extends React.Component{
                             </div>
                             <div className='imgAndLinks'>
                                 <a href="https://stephanie_lane_TriviaGame.surge.sh" className='triviaGameImg' target='_blank'rel="noopener noreferrer" >
-                                    <img src={TriviaGame} alt=""/>
+                                    <img className='triviaImg' src={TriviaGame} alt=""/>
                                 </a> 
                                 <div className='links'>
                                     <a href="https://stephanie_lane_TriviaGame.surge.sh"  target='_blank'rel="noopener noreferrer" > View live site</a>
@@ -122,7 +120,7 @@ class Projects extends React.Component{
                         <div className='todos'>
                             <div className='imgAndLinks'>
                                 <a href="https://stephanie_lane_AxiosTo-dos.surge.sh" className='todosImg' target='_blank'rel="noopener noreferrer" >
-                                    <img src={Todos} alt=""/>
+                                    <img className='todosImg' src={Todos} alt=""/>
                                 </a>
                                 <div className='links'>
                                     <a href="https://stephanie_lane_AxiosTo-dos.surge.sh"  target='_blank'rel="noopener noreferrer" > View live site</a>
@@ -162,7 +160,7 @@ class Projects extends React.Component{
                             </div>
                             <div className='imgAndLinks'>
                                 <a href="https://stephanie_lane_cssZenGarden.surge.sh" className='zenGardenImg' target='_blank'rel="noopener noreferrer" >
-                                    <img src={ZenGarden} alt=""/>
+                                    <img className='zenImg' src={ZenGarden} alt=""/>
                                 </a> 
                                 <div className='links'>
                                     <a href="https://stephanie_lane_cssZenGarden.surge.sh"  target='_blank'rel="noopener noreferrer" > View live site</a>
@@ -212,7 +210,7 @@ class Projects extends React.Component{
                                     <a href="https://github.com/stephlane544/swapMeet" target='_blank'rel="noopener noreferrer" > View github</a>
                                 </div>
                                 <a href="https://swap-meet-for-freelancers.herokuapp.com/" className='swapMeetImg' target='_blank'rel="noopener noreferrer" >
-                                    <img src={SwapMeet} alt=""/>
+                                    <img className="swapImg" src={SwapMeet} alt=""/>
                                 </a>                                
                             </div>
                         </div>
@@ -250,7 +248,7 @@ class Projects extends React.Component{
                                     <a href="https://github.com/stephlane544/Noted" target='_blank'rel="noopener noreferrer" > View github</a>
                                 </div>
                                 <a href="https://noted-note-taking.herokuapp.com/" className='notedImg' target='_blank'rel="noopener noreferrer" >
-                                    <img src={Noted} alt=""/>
+                                    <img className='notedImg' src={Noted} alt=""/>
                                 </a>                     
                             </div>
                         </div>
@@ -275,7 +273,7 @@ class Projects extends React.Component{
                                     <a href="https://github.com/stephlane544/trivia-game" target='_blank'rel="noopener noreferrer" > View github</a>
                                 </div>
                                 <a href="https://stephanie_lane_TriviaGame.surge.sh" className='triviaGameImg' target='_blank'rel="noopener noreferrer" >
-                                    <img src={TriviaGame} alt=""/>
+                                    <img className='triviaImg' src={TriviaGame} alt=""/>
                                 </a> 
                             </div>
                         </div>
@@ -302,7 +300,7 @@ class Projects extends React.Component{
                                     <a href="https://github.com/stephlane544/to-dos" target='_blank'rel="noopener noreferrer" > View github</a>
                                 </div>
                                 <a href="https://stephanie_lane_AxiosTo-dos.surge.sh" className='todosImg' target='_blank'rel="noopener noreferrer" >
-                                    <img src={Todos} alt=""/>
+                                    <img className='todos' src={Todos} alt=""/>
                                 </a>
                             </div>
                         </div>
@@ -330,7 +328,7 @@ class Projects extends React.Component{
                                     <a href="https://github.com/stephlane544/css-zen-garden" target='_blank'rel="noopener noreferrer" > View github</a>
                                 </div> 
                                 <a href="https://stephanie_lane_cssZenGarden.surge.sh" className='zenGardenImg' target='_blank'rel="noopener noreferrer" >
-                                    <img src={ZenGarden} alt=""/>
+                                    <img  className='zenImg' src={ZenGarden} alt=""/>
                                 </a>                            
                             </div>
                         </div>

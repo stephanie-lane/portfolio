@@ -1,13 +1,23 @@
 .navbar{
     display: grid;
     grid-template-columns: 10fr 2fr 2fr 2fr 2fr 1fr;
-    grid-template-rows: 100px;
+    grid-template-rows: 80px;
     background-color: #5ACCC2;
-    height: 120px;
+    height: 80px;
     width: 100%;
     position: fixed;
     z-index: 4;
+}
 
+.whiteFavicon{
+    width: 50px;
+    height: 50px;
+    padding-right: 3%;
+    filter: grayscale(100%);
+    -webkit-filter: drop-shadow(7px 7px 7px #222);
+    filter: drop-shadow(7px 7px 7px #222); 
+    flex-direction: column;
+    align-self: center;
 }
 
 .links{
@@ -17,13 +27,18 @@
     font-size: 150%;
 }
 
-#name{
+.nameAndFaviconContainer{
     padding-left: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+#name{
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
-    color: white;
+    align-items: flex-start;
     font-size: 250%;
 }
 

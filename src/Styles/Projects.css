@@ -1,12 +1,12 @@
 @media (min-width: 551px){
     .projectsPage, .contactPage, #about{
-        padding-top: 240px;
+        padding-top: 160px;
     }
 }
 
 @media (max-width: 550px){
     .projectsPage, .contactPage, #about{
-        padding-top: 140px;
+        padding-top: 100px;
     }
 }
 

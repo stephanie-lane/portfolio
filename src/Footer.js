@@ -11,12 +11,8 @@ class Contact extends React.Component{
             <div id='footer'>
                 <div className='footerBackground'></div>
                 <div className='topspacing'></div>
-                <div className='footerTitle'>Contact Me</div>
-                <div className='phoneNumber'>520-286-0841</div>
-                <div className='email'>stephlane544@gmail.com</div>
-                <a href='/contact' className='footerLinks sendToContact' to='/contact'>Click here to leave me a message.</a>
-                <div className='checkOutContainer'>
-                    <div className='checkOutText'>Check me out on:</div>
+                <div className='footerTitle'>Check me out on:</div>
+                <div className='socialContainer'>
                     <a href="https://twitter.com/StephLane544" className='twitterContainer footerLinks' target='_blank'rel="noopener noreferrer" >
                         <div>Twitter</div>
                         <img id="twitter" src={twitter} alt=""/>
@@ -30,6 +26,11 @@ class Contact extends React.Component{
                         <img id="linkedIn" src={linkedin} alt=""/>
                     </a>
                 </div>
+
+
+                <a href='/contact' className='footerLinks sendToContact' to='/contact'>
+                    <button>MESSAGE ME</button>
+                </a>
                 <div className='bottomspacing'></div>
             </div>
         );

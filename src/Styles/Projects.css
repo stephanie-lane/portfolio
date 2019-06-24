@@ -1,13 +1,5 @@
-@media (min-width: 551px){
-    .projectsPage, .contactPage, #about{
-        padding-top: 160px;
-    }
-}
-
-@media (max-width: 550px){
-    .projectsPage, .contactPage, #about{
-        padding-top: 100px;
-    }
+.projectsPage, .contactPage, #about{
+    padding-top: 120px;
 }
 
 img{
@@ -17,50 +9,71 @@ img{
 
 .skewBackground{
     border-radius: 0;
+    z-index: 0;
 } 
 
-.notedBackground{
+.notedBackground, .greyBottom{
     background-color: #909090;
 }
 
-.todoBackground{
-    background-color: #FFC9DE;
+.todoBackground, .mintBottom{
+    background-color: #ADEEE3;
 }
 
 .title{
     font-size: 40px;
     font-weight: 900;
+    padding-bottom: 3%;
+    z-index: 1;
 }
 
-.projectInfo > div{
+.projectContainer > div{
     padding-bottom: 25px;
+}
+
+.skewLeft{
+    grid-row: 1/2;
+    grid-column: 1/5;
+    background-color: #ADEEE3;
+    transform: skewY(-10deg);
+    height: 200px;
+    width: 100%;
+    margin-top: -10px;
+
+    margin-bottom: 150px;
+}
+.skewRight{
+    grid-row: 1/2;
+    grid-column: 1/5;
+    background-color: #ADEEE3;
+    transform: skewY(10deg);
+    height: 200px;
+    width: 100%;
+    margin-bottom: 150px;
+
 }
 
 .title{
     justify-self: center;
 }
 
-.projectInfo{
+.projectContainer{
     font-size: 19px;
-    grid-row: 1/3;
-    grid-column: 1/2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
-.links{
+.projectLinks{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.links > a, .links > a:visited, .links > a:hover, .links > a:focus, .links > a:active{
+.projectButtons, .projectButtons:visited, .projectButtons:hover, .projectButtons:focus, .projectButtons:active{
         text-decoration: none;
-        color: black
+        color: black;
+        z-index: 2;
 }
 
-.boldBuilt, .loginWith{
+.boldBuilt{
     font-weight: 900;
     font-size: 23px;
     text-shadow: 1.8px 0 #676767;
@@ -76,38 +89,81 @@ img{
     padding-bottom: 20%;
 }
 
+.greyBottom, .mintBottom{
+    padding-top: 20px;
+    z-index: 0;
+}
+
+.usernamePassword{
+    z-index: 1;
+}
+
+.projectButtons{
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #F4A698;
+    font-size: 15px;
+    border-color: #F4A698;
+    background-image: linear-gradient(to left, #F4A698 50%, rgb(255, 121, 98) 50%);
+    border-color: linear-gradient(to left, #F4A698 50%, rgb(255, 121, 98) 50%);
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
 
 
 @media (min-width: 1000px){
-    #projects2{
-        display: none;
-    }
-
-    .projectGrid, .projectGrid2{
+    .projectGrid{
         display: grid;
         grid-template-columns: 1fr 5fr 1fr;
         grid-auto-rows: auto;
+    }
+
+    .projectContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;  
+        grid-auto-rows: auto;
+    }
+
+    .description{
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    .builtWith{
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    .usernamePassword{
+        grid-row: 2/3;
+        grid-column: 2/3;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+        margin-top: 13%;
+    }
+
+    .projectImg{
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+
+    .projectLinks{
+        grid-row: 2/3;
+        grid-column: 2/3;
+        
     }
 
     .swapTitle{
         grid-row: 1/2;
         grid-column: 2/3;
     }
-
-    .imgAndLinks{
-        grid-row: 1/3;
-        grid-column: 2/3;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    .exampleLogins{
-        display: grid;
-        grid-template-columns: 2fr 3fr;
-        grid-auto-rows: auto;
-    }
-    
     
     .swapMeet{
         grid-column: 2/3;
@@ -152,7 +208,7 @@ img{
         margin-bottom: 3%;
     }
 
-    .pinkTop{
+    .mintTop{
         grid-row: 9/10;
         grid-column: 1/4;
     }
@@ -175,7 +231,7 @@ img{
     }
 
 
-    .pinkBottom{
+    .mintBottom{
         grid-row: 12/13;
         grid-column: 1/4;
     }
@@ -219,44 +275,44 @@ img{
 
 
 @media (max-width: 1000px){
-    #projects{
-        display: none;
-    }
-
-    .projectGrid, .projectGrid2{
+    .projectGrid{
         display: grid;
         grid-template-columns: 1fr 4fr 1fr;
     }
 
-    .imgAndLinks{
-        grid-row: 2/3;
-        grid-column: 2/3;
+    .usernamePassword{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
     }
 
-    .usernamePassword{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-auto-rows: auto;
+    .projectLinks{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
+        
+    .projectButtons{
+        margin-bottom: 10%;
+    }
+
+    .projectImg{
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
 
     .swapMeet, .triviaGame, .todos, .zenGarden, .noted{
         display: flex;
         flex-direction: column;
     }
 
-
-
     .swapTitle{
         grid-row: 1/2;
         grid-column: 2/3;
     }
-
-    .exampleLogins{
-        display: grid;
-        grid-template-columns: 2fr 3fr;
-        grid-auto-rows: auto;
-    }
-    
     
     .swapMeet{
         grid-column: 2/3;
@@ -302,7 +358,7 @@ img{
     }
 
 
-    .pinkTop{
+    .mintTop{
         grid-row: 9/10;
         grid-column: 1/4;
     }
@@ -322,7 +378,7 @@ img{
         grid-row: 11/12;
     }
 
-    .pinkBottom{
+    .mintBottom{
         grid-row: 12/13;
         grid-column: 1/4;
     }

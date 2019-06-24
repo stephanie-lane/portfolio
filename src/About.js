@@ -24,7 +24,7 @@ const About = () => {
                         <div >Sister</div> 
                     </div>
                 </div>
-                <div className='description'>I am a woman who can wear many hats, but am always passionate about having a great outcome. I love creating things that not only work, and work well, but look good.</div>
+                <div className='aboutDescription'>I am a woman who can wear many hats, but am always passionate about having a great outcome. I love creating things that not only work, and work well, but look good.</div>
             </div>
         </div>
     );

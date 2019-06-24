@@ -6,8 +6,8 @@ import SwapMeet from './imgs/projectThumbnails/SwapMeet.png';
 import Noted from './imgs/projectThumbnails/Noted.png';
 import greyTop from './imgs/skewBackgrounds/greyTop.png';
 import greyBottom from './imgs/skewBackgrounds/greyBottom.png';
-import pinkTop from './imgs/skewBackgrounds/pinkTop.png';
-import pinkBottom from './imgs/skewBackgrounds/pinkBottom.png';
+import mintTop from './imgs/skewBackgrounds/mintTop.png';
+import mintBottom from './imgs/skewBackgrounds/mintBottom.png';
 import './Styles/Projects.css';
 
 
@@ -21,31 +21,28 @@ class Projects extends React.Component{
 
                         
                         <div className='title swapTitle'>Swap Meet</div>
-                        <div className='swapMeet'> 
-                            <div className='projectInfo swapMeetInfo'>
-                                <div className='description'>
-                                    A website app for bartering services. Users create a profile with a service they can offer to others, which will then show up in the searched services. Users can search through all of the services offered.
-                                </div>
-                                <div className='builtWith'>
-                                    <div className='boldBuilt'>Built using: </div>
-                                    React, Express, MongoDB, Mongoose, HTML, CSS
-                                </div>
-                                <div className='exampleLogins'>
-                                    <div className='loginWith'>Login with:</div>
-                                    <div className='usernamePassword'>
-                                        <div className='username'>Username: user2</div>
-                                        <div className='password'>Password: 123</div>
-                                    </div>
-                                </div>
+                        <div className='swapMeet projectContainer'> 
+                            <div className='description'>
+                                A website app for bartering services. Users create a profile with a service they can offer to others, which will then show up in the searched services. 
                             </div>
-                            <div className='imgAndLinks'>
-                                <a href="https://swap-meet-for-freelancers.herokuapp.com/" className='swapMeetImg' target='_blank'rel="noopener noreferrer" >
-                                    <img className='swapImg' src={SwapMeet} alt=""/>
+                            <div className='builtWith'>
+                                <div className='boldBuilt'>Built using: </div>
+                                React, Express, MongoDB, Mongoose, HTML, CSS
+                            </div>
+                            <div className='usernamePassword'>
+                                <div className='username'>Username: user2</div>
+                                <div className='password'>Password: 123</div>
+                            </div>
+                            <a href="https://swap-meet-for-freelancers.herokuapp.com/" className='swapMeetImg projectImg' target='_blank'rel="noopener noreferrer" >
+                                <img className='swapImg' src={SwapMeet} alt=""/>
+                            </a>
+                            <div className='projectLinks'>
+                                <a href="https://swap-meet-for-freelancers.herokuapp.com/"  target='_blank'rel="noopener noreferrer" > 
+                                    <button className='projectButtons'>View live site</button>
                                 </a>
-                                <div className='links'>
-                                    <a href="https://swap-meet-for-freelancers.herokuapp.com/"  target='_blank'rel="noopener noreferrer" > View live site</a>
-                                    <a href="https://github.com/stephlane544/swapMeet" target='_blank'rel="noopener noreferrer" > View github</a>
-                                </div>
+                                <a href="https://github.com/stephlane544/swapMeet" target='_blank'rel="noopener noreferrer" > 
+                                    <button className='projectButtons'>View github</button>
+                                </a>
                             </div>
                         </div>
 
@@ -54,32 +51,29 @@ class Projects extends React.Component{
 
                         <img className='skewBackground greyTop' src={greyTop} alt=''/>
                         <div className='notedBackground'></div>
-                        <div className='title notedTitle'>Noted</div>
-                        <div className='noted'> 
-                            <div className='imgAndLinks'>
-                                <a href="https://noted-note-taking.herokuapp.com/" className='notedImg' target='_blank'rel="noopener noreferrer" >
-                                    <img className='notedImg' src={Noted} alt=""/>
-                                </a>
-                                <div className='links'>
-                                    <a href="https://noted-note-taking.herokuapp.com/"  target='_blank'rel="noopener noreferrer" > View live site</a>
-                                    <a href="https://github.com/stephlane544/Noted" target='_blank'rel="noopener noreferrer" > View github</a>
-                                </div>
+                        <div className='title notedTitle'>Noted</div> 
+                        <div className='noted projectContainer'> 
+                            <div className='description'>
+                                Noted is an app for small notes, but it also has a collections section in which users can make a book with whatever content they would like.
                             </div>
-                            <div className='projectInfo notedInfo'>
-                                <div className='description'>
-                                    Noted is an app for small notes, but it also has a collections section in which users can make a book with whatever content they would like.
-                                </div>
-                                <div className='builtWith'>
-                                    <div className='boldBuilt'>Built using: </div>
-                                    React, Express, MongoDB, Mongoose, HTML, CSS
-                                </div>
-                                <div className='exampleLogins'>
-                                    <div className='loginWith'>Login with:</div>
-                                    <div className='usernamePassword'>
-                                        <div className='username'>Username: user2</div>
-                                        <div className='password'>Password: 123</div>
-                                    </div>
-                                </div>
+                            <div className='builtWith'>
+                                <div className='boldBuilt'>Built using: </div>
+                                React, Express, MongoDB, Mongoose, HTML, CSS
+                            </div>
+                            <div className='usernamePassword'>
+                                <div className='username'>Username: user2</div>
+                                <div className='password'>Password: 123</div>
+                            </div>
+                            <a href="https://noted-note-taking.herokuapp.com/" className='notedImg projectImg' target='_blank'rel="noopener noreferrer" >
+                                <img className='notedImg' src={Noted} alt=""/>
+                            </a>
+                            <div className='projectLinks'>
+                                <a href="https://noted-note-taking.herokuapp.com/"  target='_blank'rel="noopener noreferrer" > 
+                                    <button className='projectButtons'>View live site</button>
+                                </a>
+                                <a href="https://github.com/stephlane544/Noted" target='_blank'rel="noopener noreferrer" > 
+                                    <button className='projectButtons'>View github</button>
+                                </a>
                             </div>
                         </div>
                         <img className='skewBackground greyBottom' src={greyBottom} alt=''/>
@@ -90,54 +84,54 @@ class Projects extends React.Component{
 
 
                         <div className='title triviaTitle'>Trivia Game</div>
-                        <div className='triviaGame'>
-                            <div className='projectInfo triviaGameInfo'>
+                        <div className='triviaGame projectContainer'>
                             <div className='description'>
-                                Created a trivia game using opentdb API. It randomly gives a user a question, shows the correct and incorrect answers once an answer is chosen, and keeps track of the users score. In addition, the user can search through the questions for specific words, category, difficulty level, or type.
+                                Created a trivia game using opentdb API. It randomizes questions, shows correct and incorrect answers, and keeps track of the user's score.
                             </div>
-                                <div className='builtWith'>
-                                    <div className='boldBuilt'>Built using: </div>
-                                    React, HTML, CSS
-                                </div>
+                            <div className='builtWith'>
+                                <div className='boldBuilt'>Built using: </div>
+                                React, HTML, CSS
                             </div>
-                            <div className='imgAndLinks'>
-                                <a href="https://stephanie_lane_TriviaGame.surge.sh" className='triviaGameImg' target='_blank'rel="noopener noreferrer" >
-                                    <img className='triviaImg' src={TriviaGame} alt=""/>
-                                </a> 
-                                <div className='links'>
-                                    <a href="https://stephanie_lane_TriviaGame.surge.sh"  target='_blank'rel="noopener noreferrer" > View live site</a>
-                                    <a href="https://github.com/stephlane544/trivia-game" target='_blank'rel="noopener noreferrer" > View github</a>
-                                </div>                            
-                            </div>
+                            <a href="https://stephanie_lane_TriviaGame.surge.sh" className='triviaGameImg projectImg' target='_blank'rel="noopener noreferrer" >
+                                <img className='triviaImg' src={TriviaGame} alt=""/>
+                            </a> 
+                            <div className='projectLinks'>
+                                <a href="https://stephanie_lane_TriviaGame.surge.sh"  target='_blank'rel="noopener noreferrer" >
+                                    <button className='projectButtons'>View live site</button>
+                                </a>
+                                <a href="https://github.com/stephlane544/trivia-game" target='_blank'rel="noopener noreferrer" >
+                                    <button className='projectButtons'>View github</button>
+                                </a>
+                            </div>                            
                         </div>
 
 
 
 
-                        <img className='skewBackground pinkTop' src={pinkTop} alt=''/>
+                        <img className='skewBackground mintTop' src={mintTop} alt=''/>
                         <div className='todoBackground'></div>
                         <div className='title todoTitle'>To-dos</div>
-                        <div className='todos'>
-                            <div className='imgAndLinks'>
-                                <a href="https://stephanie_lane_AxiosTo-dos.surge.sh" className='todosImg' target='_blank'rel="noopener noreferrer" >
-                                    <img className='todosImg' src={Todos} alt=""/>
+                        <div className='todos projectContainer'>                 
+                            <div className='description'>
+                                Developed a website linked to an API to get a person's to-do list. Also allowed user to post new to-do items, delete items, or mark them as complete using Axios to put these into the API
+                            </div>
+                            <div className='builtWith'>
+                                <div className='boldBuilt2'>Built using: </div>
+                                HTML, CSS, and Javascript
+                            </div>
+                            <a href="https://stephanie_lane_AxiosTo-dos.surge.sh" className='todosImg projectImg' target='_blank'rel="noopener noreferrer" >
+                                <img className='todosImg' src={Todos} alt=""/>
+                            </a>
+                            <div className='projectLinks'>
+                                <a href="https://stephanie_lane_AxiosTo-dos.surge.sh"  target='_blank'rel="noopener noreferrer" > 
+                                    <button className='projectButtons'>View live site</button>
                                 </a>
-                                <div className='links'>
-                                    <a href="https://stephanie_lane_AxiosTo-dos.surge.sh"  target='_blank'rel="noopener noreferrer" > View live site</a>
-                                    <a href="https://github.com/stephlane544/to-dos" target='_blank'rel="noopener noreferrer" > View github</a>
-                                </div>                            
-                            </div>
-                            <div className='projectInfo todosInfo'>
-                                <div className='description'>
-                                    Developed a website linked to an API to get a person's to-do list. Also allowed user to post new to-do items, delete items, or mark them as complete using Axios to put these into the API
-                                </div>
-                                <div className='builtWith'>
-                                    <div className='boldBuilt2'>Built using: </div>
-                                    HTML, CSS, and Javascript
-                                </div>
-                            </div>
+                                <a href="https://github.com/stephlane544/to-dos" target='_blank'rel="noopener noreferrer" > 
+                                    <button className='projectButtons'>View github</button>
+                                </a>
+                            </div>           
                         </div>
-                        <img className='skewBackground pinkBottom' src={pinkBottom} alt=''/>                  
+                        <img className='skewBackground mintBottom' src={mintBottom} alt=''/>                  
 
 
 
@@ -145,192 +139,25 @@ class Projects extends React.Component{
 
                         
                         <div className='title zenTitle'>CSS Zen Garden</div>
-                        <div className='zenGarden'>
-                            <div className='projectInfo zenGardenInfo'>
-                                <div className='description'>
-                                    Created a website mimicking the appearance of csszengarden.com
-                                </div>
-                                <div className='description'>
-                                    Mobile-first responsive design
-                                </div>
-                                <div className='builtWith'>
-                                    <span className='boldBuilt2'>Built using: </span>
-                                    HTML and CSS (grid in particular)
-                                </div>
-                            </div>
-                            <div className='imgAndLinks'>
-                                <a href="https://stephanie_lane_cssZenGarden.surge.sh" className='zenGardenImg' target='_blank'rel="noopener noreferrer" >
-                                    <img className='zenImg' src={ZenGarden} alt=""/>
-                                </a> 
-                                <div className='links'>
-                                    <a href="https://stephanie_lane_cssZenGarden.surge.sh"  target='_blank'rel="noopener noreferrer" > View live site</a>
-                                    <a href="https://github.com/stephlane544/css-zen-garden" target='_blank'rel="noopener noreferrer" > View github</a>
-                                </div>                            
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-
-
-
-
-
-
-
-
-
-
-                <div id='projects2'>
-                    <div className='projectGrid'>
-
-                    <img className='skewBackground greyTop' src={greyTop} alt=''/>
-                        <div className='swapBackground'></div>
-                        <div className='title swapTitle'>Swap Meet</div>
-                        <div className='swapMeet'> 
-                            <div className='projectInfo swapMeetInfo'>
-                                <div className='description'>
-                                    A website app for bartering services. Users create a profile with a service they can offer to others, which will then show up in the searched services. Users can search through all of the services offered.
-                                </div>
-                                <div className='builtWith'>
-                                    <div className='boldBuilt'>Built using: </div>
-                                    React, Express, MongoDB, Mongoose, HTML, CSS
-                                </div>
-                                <div className='exampleLogins'>
-                                    <div className='loginWith'>Login with:</div>
-                                    <div className='usernamePassword'>
-                                        <div className='username'>Username: user2</div>
-                                        <div className='password'>Password: 123</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='imgAndLinks'>
-                                <div className='links'>
-                                    <a href="https://swap-meet-for-freelancers.herokuapp.com/"  target='_blank'rel="noopener noreferrer" > View live site</a>
-                                    <a href="https://github.com/stephlane544/swapMeet" target='_blank'rel="noopener noreferrer" > View github</a>
-                                </div>
-                                <a href="https://swap-meet-for-freelancers.herokuapp.com/" className='swapMeetImg' target='_blank'rel="noopener noreferrer" >
-                                    <img className="swapImg" src={SwapMeet} alt=""/>
-                                </a>                                
-                            </div>
-                        </div>
-
-
-
-
-
-
-
-                        
-                    <img className='skewBackground greyTop' src={greyTop} alt=''/>
-                    <div className='notedBackground'></div>
-                        <div className='title notedTitle'>Noted</div>
-                        <div className='noted'> 
-                            <div className='projectInfo notedInfo'>
-                                <div className='description'>
-                                    Noted is an app for small notes, but it also has a collections section in which users can make a book with whatever content they would like.
-                                </div>
-                                <div className='builtWith'>
-                                    <div className='boldBuilt'>Built using: </div>
-                                    React, Express, MongoDB, Mongoose, HTML, CSS
-                                </div>
-                                <div className='exampleLogins'>
-                                    <div className='loginWith'>Login with:</div>
-                                    <div className='usernamePassword'>
-                                        <div className='username'>Username: user2</div>
-                                        <div className='password'>Password: 123</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='imgAndLinks'>
-                                <div className='links'>
-                                    <a href="https://noted-note-taking.herokuapp.com/"  target='_blank'rel="noopener noreferrer" > View live site</a>
-                                    <a href="https://github.com/stephlane544/Noted" target='_blank'rel="noopener noreferrer" > View github</a>
-                                </div>
-                                <a href="https://noted-note-taking.herokuapp.com/" className='notedImg' target='_blank'rel="noopener noreferrer" >
-                                    <img className='notedImg' src={Noted} alt=""/>
-                                </a>                     
-                            </div>
-                        </div>
-                        <img className='skewBackground greyBottom' src={greyBottom} alt=''/>
-
-
-                        <div className='triviaBackground'></div>
-                        <div className='title triviaTitle'>Trivia Game</div>
-                        <div className='triviaGame'>
-                            <div className='projectInfo triviaGameInfo'>
+                        <div className='zenGarden projectContainer'>
                             <div className='description'>
-                                Created a trivia game using opentdb API. It randomly gives a user a question, shows the correct and incorrect answers once an answer is chosen, and keeps track of the users score. In addition, the user can search through the questions for specific words, category, difficulty level, or type.
+                                Created a website mimicking the appearance of csszengarden.com
                             </div>
-                                <div className='builtWith'>
-                                    <div className='boldBuilt'>Built using: </div>
-                                    React, HTML, CSS
-                                </div>
+                            <div className='builtWith'>
+                                <span className='boldBuilt2'>Built using: </span>
+                                HTML and CSS (grid in particular)
                             </div>
-                            <div className='imgAndLinks'>
-                                <div className='links'>
-                                    <a href="https://stephanie_lane_TriviaGame.surge.sh"  target='_blank'rel="noopener noreferrer" > View live site</a>
-                                    <a href="https://github.com/stephlane544/trivia-game" target='_blank'rel="noopener noreferrer" > View github</a>
-                                </div>
-                                <a href="https://stephanie_lane_TriviaGame.surge.sh" className='triviaGameImg' target='_blank'rel="noopener noreferrer" >
-                                    <img className='triviaImg' src={TriviaGame} alt=""/>
-                                </a> 
-                            </div>
-                        </div>
-                 
-
-
-
-                        <img className='skewBackground pinkTop' src={pinkTop} alt=''/>
-                        <div className='todoBackground'></div>
-                        <div className='title todoTitle'>To-dos</div>
-                        <div className='todos'>
-                            <div className='projectInfo todosInfo'>
-                                <div className='description'>
-                                    Developed a website linked to an API to get a person's to-do list. Also allowed user to post new to-do items, delete items, or mark them as complete using Axios to put these into the API
-                                </div>
-                                <div className='builtWith'>
-                                    <div className='boldBuilt2'>Built using: </div>
-                                    HTML, CSS, and Javascript
-                                </div>
-                            </div>
-                            <div className='imgAndLinks'>
-                                <div className='links'>
-                                    <a href="https://stephanie_lane_AxiosTo-dos.surge.sh"  target='_blank'rel="noopener noreferrer" > View live site</a>
-                                    <a href="https://github.com/stephlane544/to-dos" target='_blank'rel="noopener noreferrer" > View github</a>
-                                </div>
-                                <a href="https://stephanie_lane_AxiosTo-dos.surge.sh" className='todosImg' target='_blank'rel="noopener noreferrer" >
-                                    <img className='todos' src={Todos} alt=""/>
+                            <a href="https://stephanie_lane_cssZenGarden.surge.sh" className='zenGardenImg projectImg' target='_blank'rel="noopener noreferrer" >
+                                <img className='zenImg' src={ZenGarden} alt=""/>
+                            </a> 
+                            <div className='projectLinks'>
+                                <a href="https://stephanie_lane_cssZenGarden.surge.sh"  target='_blank'rel="noopener noreferrer" > 
+                                    <button className='projectButtons'>View live site</button>
                                 </a>
-                            </div>
-                        </div>
-                        <img className='skewBackground pinkBottom' src={pinkBottom} alt=''/> 
-
-
-
-                        <div className='title zenTitle'>CSS Zen Garden</div>
-                        <div className='zenGarden'>
-                            <div className='projectInfo zenGardenInfo'>
-                                <div className='description'>
-                                    Created a website mimicking the appearance of csszengarden.com
-                                </div>
-                                <div className='description'>
-                                    Mobile-first responsive design
-                                </div>
-                                <div className='builtWith'>
-                                    <span className='boldBuilt2'>Built using: </span>
-                                    HTML and CSS (grid in particular)
-                                </div>
-                            </div>
-                            <div className='imgAndLinks'>
-                            <div className='links'>
-                                    <a href="https://stephanie_lane_cssZenGarden.surge.sh"  target='_blank'rel="noopener noreferrer" > View live site</a>
-                                    <a href="https://github.com/stephlane544/css-zen-garden" target='_blank'rel="noopener noreferrer" > View github</a>
-                                </div> 
-                                <a href="https://stephanie_lane_cssZenGarden.surge.sh" className='zenGardenImg' target='_blank'rel="noopener noreferrer" >
-                                    <img  className='zenImg' src={ZenGarden} alt=""/>
-                                </a>                            
-                            </div>
+                                <a href="https://github.com/stephlane544/css-zen-garden" target='_blank'rel="noopener noreferrer" > 
+                                    <button className='projectButtons'>View github</button>
+                                </a>
+                            </div>                            
                         </div>
                     </div> 
                 </div>

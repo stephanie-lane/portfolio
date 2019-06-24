@@ -10,7 +10,7 @@ const Navbar = (props) => {
                 <div className='nameAndFaviconContainer'>
                     <img className='whiteFavicon' src={whiteFavicon} alt=""/>
                     <a href='/' id='name' className='links'  to='/'>Stephanie Lane</a>
-                </div>
+                </div> 
                 <a href='/' className='links navHome'  to='/'>Home</a>
                 <a href='/projects' className='links navProjects'  to='/projects'>Projects</a>
                 <a href='/resume' className='links navResume'  to='/resume'>Resume</a>
@@ -18,7 +18,10 @@ const Navbar = (props) => {
             </div>
 
             <div className='navbar2'>
-                <div id='name'>Stephanie Lane</div>
+                <div className='nameAndFaviconContainer'>
+                    <img className='whiteFavicon' src={whiteFavicon} alt=""/>
+                    <a href='/' id='name' className='links'  to='/'>Stephanie Lane</a>
+                </div>                
                 <button className="toggleHamburger" onClick={props.drawerClickHandler}>
                     <div className="toggleHamburgerLine"></div>
                     <div className="toggleHamburgerLine"></div>

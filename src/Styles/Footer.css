@@ -8,9 +8,6 @@
     background-color: #EF7B45;
 }
 
-.topspacing{
-}
-
 .footerTitle{
     font-size: 30px;
     margin-bottom: 3%;
@@ -25,26 +22,24 @@
 }
 
 .sendToContact{
-    align-self: center;
+    align-items: center;
 }
 
-button{
-    width: 130%;
+.messageButton{
+    width: 140px;
     height: 40px;
     border-radius: 10px;
     background-color: #F4A698;
     font-size: 15px;
-    text-align: center;
     border-color: #F4A698;
-    margin-left: -8%;
+    background-image: linear-gradient(to left, #F4A698 50%, rgb(255, 121, 98) 50%);
+    border-color: linear-gradient(to left, #F4A698 50%, rgb(255, 121, 98) 50%);
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222); 
 }
-/* .checkOutContainer{
-    grid-row: 3/6;
-    grid-column: 3/4;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-} */
 
 .twitterContainer, .gitContainer, .linkedinContainer{
     display: flex;
@@ -55,8 +50,8 @@ button{
 }
 
 #twitter, #github, #linkedIn{
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     align-self: center;
 }
 

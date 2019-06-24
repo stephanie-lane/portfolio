@@ -29,7 +29,7 @@ class Contact extends React.Component{
 
 
                 <a href='/contact' className='footerLinks sendToContact' to='/contact'>
-                    <button>MESSAGE ME</button>
+                    <button className='messageButton'>MESSAGE ME</button>
                 </a>
                 <div className='bottomspacing'></div>
             </div>

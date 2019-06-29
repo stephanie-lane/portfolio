@@ -30,7 +30,7 @@ class Projects extends React.Component{
                                 React, Express, MongoDB, Mongoose, HTML, CSS
                             </div>
                             <div className='usernamePassword'>
-                                <div className='username'>Username: user2</div>
+                                <div className='username'>Username: user</div>
                                 <div className='password'>Password: 123</div>
                             </div>
                             <a href="https://swap-meet-for-freelancers.herokuapp.com/" className='swapMeetImg projectImg' target='_blank'rel="noopener noreferrer" >

@@ -28,11 +28,6 @@
     line-height: 1.5;
 }
 
-.phoneNumber, .email{
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-
 .contactMessage{
     grid-column: 2/3;
     grid-row: 3/4;
@@ -88,7 +83,7 @@ input:focus, textarea:focus{
 }
 
 .submitButton{
-    width: 15%;
+    width: 80px;
     height: 40px;
     border-radius: 10px;
     background-color: #F4A698;
@@ -96,7 +91,7 @@ input:focus, textarea:focus{
     font-size: 20px;
     color: #2B4141;
     text-align: center;
-    padding-left: 0;
+    /* padding-left: 0; */
     background-image: linear-gradient(to left, #F4A698 50%, rgb(255, 121, 98) 50%);
     background-size: 200% 100%;
     background-repeat: no-repeat;
@@ -114,12 +109,49 @@ input:focus, textarea:focus{
 ::-webkit-input-placeholder {
     font-style: italic;
 }
-:-moz-placeholder {
-    font-style: italic;  
+
+@media(max-width: 1000px){
+    .contactPage{
+        display: grid;
+        grid-template-columns: 1fr 5fr 5fr 1fr;
+        grid-auto-rows: auto;
+        grid-gap: 5%;
+        padding-bottom: 15%;
+    }
+    
+    .contactTitle{
+        font-size: 30px;
+        grid-column: 2/4;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .contactFavicon{
+        width: 60px;
+        height: 60px;
+        padding-right: 3%;
+    
+    }
+    
+    .contactInfo{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    
+    .contactMessage{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    
+    .catImg{
+        display: none;
+    }
+    
+    .form{
+        grid-column: 2/4;
+        grid-row: 3/4;
+    }
 }
-::-moz-placeholder {
-    font-style: italic;  
-}
-:-ms-input-placeholder {  
-    font-style: italic; 
-}
+
+

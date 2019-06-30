@@ -142,7 +142,7 @@ input:focus, textarea:focus{
     .contactMessage{
         grid-column: 2/3;
         grid-row: 3/4;
-        
+
     }
     
     .catImg{
@@ -152,6 +152,12 @@ input:focus, textarea:focus{
     .form{
         grid-column: 2/3;
         grid-row: 4/5;
+    }
+}
+
+@media(max-width: 500px){
+    .form{
+        padding-bottom: 20%;
     }
 }
 

@@ -110,18 +110,10 @@ input:focus, textarea:focus{
     transform: scale(1.1); 
 }
 
-::-webkit-input-placeholder {
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, input:-ms-input-placeholder, textarea:-ms-input-placeholder, input::-moz-placeholder, textarea::-moz-placeholder, input:-moz-placeholder, textarea:-moz-placeholder {
     font-style: italic;
 }
-:-moz-placeholder {
-    font-style: italic;  
-}
-::-moz-placeholder {
-    font-style: italic;  
-}
-:-ms-input-placeholder {  
-    font-style: italic; 
-}
+
 
 
 @media(max-width: 1000px){

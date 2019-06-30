@@ -113,7 +113,7 @@ input:focus, textarea:focus{
 @media(max-width: 1000px){
     .contactPage{
         display: grid;
-        grid-template-columns: 1fr 5fr 5fr 1fr;
+        grid-template-columns: 1fr 10fr 1fr;
         grid-auto-rows: auto;
         grid-gap: 5%;
         padding-bottom: 15%;
@@ -121,7 +121,7 @@ input:focus, textarea:focus{
     
     .contactTitle{
         font-size: 30px;
-        grid-column: 2/4;
+        grid-column: 2/3;
         grid-row: 1/2;
         display: flex;
         flex-direction: row;
@@ -140,8 +140,9 @@ input:focus, textarea:focus{
     }
     
     .contactMessage{
-        grid-column: 3/4;
-        grid-row: 2/3;
+        grid-column: 2/3;
+        grid-row: 3/4;
+        
     }
     
     .catImg{
@@ -149,8 +150,8 @@ input:focus, textarea:focus{
     }
     
     .form{
-        grid-column: 2/4;
-        grid-row: 3/4;
+        grid-column: 2/3;
+        grid-row: 4/5;
     }
 }
 

@@ -28,6 +28,11 @@
     line-height: 1.5;
 }
 
+.phoneNumber, .email{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
 .contactMessage{
     grid-column: 2/3;
     grid-row: 3/4;
@@ -76,7 +81,6 @@ textarea{
     background-color: #f9f9f9;
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222); 
-    -webkit-appearance: none;
 }
 
 input:focus, textarea:focus{
@@ -109,6 +113,16 @@ input:focus, textarea:focus{
 ::-webkit-input-placeholder {
     font-style: italic;
 }
+:-moz-placeholder {
+    font-style: italic;  
+}
+::-moz-placeholder {
+    font-style: italic;  
+}
+:-ms-input-placeholder {  
+    font-style: italic; 
+}
+
 
 @media(max-width: 1000px){
     .contactPage{
@@ -160,5 +174,8 @@ input:focus, textarea:focus{
         padding-bottom: 20%;
     }
 }
+
+
+
 
 

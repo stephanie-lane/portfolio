@@ -76,6 +76,7 @@ textarea{
     background-color: #f9f9f9;
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222); 
+    -webkit-appearance: none;
 }
 
 input:focus, textarea:focus{
@@ -91,7 +92,6 @@ input:focus, textarea:focus{
     font-size: 20px;
     color: #2B4141;
     text-align: center;
-    /* padding-left: 0; */
     background-image: linear-gradient(to left, #F4A698 50%, rgb(255, 121, 98) 50%);
     background-size: 200% 100%;
     background-repeat: no-repeat;

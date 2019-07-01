@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 5%;
+    padding-top: 2%;
     text-align: center;
     font-size: 15px;
     background-color: #EF7B45;
@@ -10,14 +10,14 @@
 
 .footerTitle{
     font-size: 30px;
-    margin-bottom: 3%;
+    margin-bottom: 2%;
 }
 
 .socialContainer{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 3%;
+    margin-bottom: 2%;
 
 }
 
@@ -64,7 +64,7 @@
 .bottomspacing{
     grid-row: 6/7;
     grid-column: 1/5;
-    padding-top: 5%;
+    padding-top: 2%;
 }
 
 .footerLinks, .footerLinks:visited, .footerLinks:hover, .footerLinks:focus, .footerLinks:active{

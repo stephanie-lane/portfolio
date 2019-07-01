@@ -13,7 +13,7 @@ const Navbar = (props) => {
                 </div> 
                 <a href='/' className='links navHome'  to='/'>Home</a>
                 <a href='/projects' className='links navProjects'  to='/projects'>Projects</a>
-                <a href='/resume' className='links navResume'  to='/resume'>Resume</a>
+                <a href='/resume' className='links navResume'  target='_blank' rel="noopener noreferrer" to='/resume'>Resume</a>
                 <a href='/contact' className='links navContact' to='/contact'>Contact</a>
             </div>
 

@@ -33,7 +33,7 @@ class Projects extends React.Component{
                                 <div className='username'>Username: user</div>
                                 <div className='password'>Password: 123</div>
                             </div>
-                            <a href="https://swap-meet-for-freelancers.herokuapp.com/" className='swapMeetImg projectImg' target='_blank'rel="noopener noreferrer" >
+                            <a href="https://swap-meet-for-freelancers.herokuapp.com/" className='swapMeetImg projectImg' target='_blank' rel="noopener noreferrer" >
                                 <img className='swapImg' src={SwapMeet} alt=""/>
                             </a>
                             <div className='projectLinks'>

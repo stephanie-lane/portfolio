@@ -21,3 +21,6 @@ button, link, a, #twitter, #github, #linkedIn{
 transition: all .2s ease-in-out;
 }
 
+textarea, input.text, input[type="text"], input[type="button"], input[type="submit"], .input-checkbox {
+    -webkit-appearance: none;
+}

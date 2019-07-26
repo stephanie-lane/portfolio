@@ -45,7 +45,6 @@ class Contact extends Component {
                         placeholder='Message *'
                         name='message'
                         required
-                        style={{filter: 'drop-shadow(5px 5px 5px #222)' }}
                     />     
                     <input 
                         className='submitButton'

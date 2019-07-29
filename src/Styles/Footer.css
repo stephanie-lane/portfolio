@@ -11,6 +11,7 @@
 .footerTitle{
     font-size: 30px;
     margin-bottom: 2%;
+    color: white;
 }
 
 .socialContainer{
@@ -18,7 +19,10 @@
     flex-direction: row;
     justify-content: center;
     margin-bottom: 2%;
+}
 
+.socialContainer > a >div {
+    color: white;
 }
 
 .sendToContact{
@@ -29,16 +33,18 @@
     width: 140px;
     height: 40px;
     border-radius: 10px;
-    background-color: #F4A698;
+    background-color: #fffdfd;
+    color: #964e41;
+    font-weight: bold;
     font-size: 15px;
-    border-color: #F4A698;
-    background-image: linear-gradient(to left, #F4A698 50%, rgb(255, 121, 98) 50%);
-    border-color: linear-gradient(to left, #F4A698 50%, rgb(255, 121, 98) 50%);
+    border-color: #fffdfd;
+    background-image: linear-gradient(to left, #fffdfd 50%, #fffdfd);
+    /* border-color: linear-gradient(to left, #F4A698 50%, rgb(255, 121, 98) 50%); */
     background-size: 200% 100%;
     background-repeat: no-repeat;
     background-position: bottom right;
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(5px 5px 5px #222); 
+    -webkit-filter: drop-shadow(2px 2px 2px #222);
+    filter: drop-shadow(2px 2px 2px #222); 
 }
 
 .twitterContainer, .gitContainer, .linkedinContainer{
